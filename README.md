@@ -20,6 +20,8 @@ Python packages:
 
 ## Installation
 
+### Linux (Ubuntu/Debian)
+
 ### 1. Create and activate a virtual environment
 
 ```bash
@@ -41,11 +43,46 @@ pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
+### Windows (PowerShell)
+
+### 1. Install Python
+
+- Install Python 3.10+ from https://www.python.org/downloads/windows/
+- During install, enable:
+  - `Add python.exe to PATH`
+  - `tcl/tk and IDLE` (needed for tkinter GUI)
+
+### 2. Create and activate a virtual environment
+
+```powershell
+py -3 -m venv .venv
+.\.venv\Scripts\Activate.ps1
+```
+
+### 3. Install Python dependencies
+
+```powershell
+python -m pip install --upgrade pip
+pip install -r requirements.txt
+```
+
 ## Run
 
 From this folder:
 
 ```bash
+python quick_move_gui.py
+```
+
+Windows serial port example:
+
+- Use `COM3`, `COM4`, etc. (check in Device Manager).
+
+Windows environment override example (PowerShell):
+
+```powershell
+$env:MYCOBOT_PORT="COM3"
+$env:MYCOBOT_BAUD="115200"
 python quick_move_gui.py
 ```
 
@@ -97,4 +134,3 @@ sudo usermod -aG dialout $USER
 ```
 
 Then log out and log back in.
-
