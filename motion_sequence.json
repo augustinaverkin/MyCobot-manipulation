@@ -1,0 +1,454 @@
+{
+  "version": 1,
+  "saved_at": "2026-02-19T10:03:43+02:00",
+  "sequence_steps": [
+    {
+      "kind": "home",
+      "pose_override": [
+        180.0,
+        -60.0,
+        290.0,
+        -90.0,
+        0.0,
+        -90.0
+      ]
+    },
+    {
+      "kind": "move_named",
+      "name": "Pick_up",
+      "pose_override": [
+        262.3,
+        -19.7,
+        1.4,
+        178.93,
+        0.0,
+        -78.69
+      ]
+    },
+    {
+      "kind": "vacuum",
+      "enabled": true
+    },
+    {
+      "kind": "wait",
+      "ms": 500
+    },
+    {
+      "kind": "home",
+      "pose_override": [
+        180.0,
+        -60.0,
+        290.0,
+        -90.0,
+        0.0,
+        -90.0
+      ]
+    },
+    {
+      "kind": "move_named",
+      "name": "Left",
+      "pose_override": [
+        180.0,
+        -60.0,
+        290.0,
+        -90.0,
+        0.0,
+        -80.0
+      ]
+    },
+    {
+      "kind": "move_named",
+      "name": "Left",
+      "pose_override": [
+        180.0,
+        -60.0,
+        290.0,
+        -90.0,
+        0.0,
+        -70.0
+      ]
+    },
+    {
+      "kind": "move_named",
+      "name": "Left",
+      "pose_override": [
+        180.0,
+        -60.0,
+        290.0,
+        -90.0,
+        0.0,
+        -60.0
+      ]
+    },
+    {
+      "kind": "move_named",
+      "name": "Left",
+      "pose_override": [
+        180.0,
+        -60.0,
+        290.0,
+        -90.0,
+        0.0,
+        -50.0
+      ]
+    },
+    {
+      "kind": "move_named",
+      "name": "Left",
+      "pose_override": [
+        180.0,
+        -60.0,
+        290.0,
+        -90.0,
+        0.0,
+        -45.0
+      ]
+    },
+    {
+      "kind": "home",
+      "pose_override": [
+        180.0,
+        -60.0,
+        290.0,
+        -90.0,
+        0.0,
+        -90.0
+      ]
+    },
+    {
+      "kind": "move_named",
+      "name": "Down",
+      "pose_override": [
+        180.0,
+        -60.0,
+        290.0,
+        -100.0,
+        -0.0,
+        -90.0
+      ]
+    },
+    {
+      "kind": "move_named",
+      "name": "Down",
+      "pose_override": [
+        180.0,
+        -60.0,
+        290.0,
+        -105.0,
+        -0.0,
+        -90.0
+      ]
+    },
+    {
+      "kind": "move_named",
+      "name": "Down",
+      "pose_override": [
+        180.0,
+        -60.0,
+        290.0,
+        -110.0,
+        0.0,
+        -90.0
+      ]
+    },
+    {
+      "kind": "move_named",
+      "name": "Down",
+      "pose_override": [
+        180.0,
+        -60.0,
+        290.0,
+        -115.0,
+        -0.0,
+        -90.0
+      ]
+    },
+    {
+      "kind": "move_named",
+      "name": "Down",
+      "pose_override": [
+        180.0,
+        -60.0,
+        290.0,
+        -120.0,
+        0.0,
+        -90.0
+      ]
+    },
+    {
+      "kind": "move_named",
+      "name": "Down",
+      "pose_override": [
+        180.0,
+        -60.0,
+        290.0,
+        -125.0,
+        -0.0,
+        -90.0
+      ]
+    },
+    {
+      "kind": "move_named",
+      "name": "Down",
+      "pose_override": [
+        180.0,
+        -60.0,
+        290.0,
+        -130.0,
+        0.0,
+        -90.0
+      ]
+    },
+    {
+      "kind": "move_named",
+      "name": "Down",
+      "pose_override": [
+        180.0,
+        -60.0,
+        290.0,
+        -135.76,
+        0.0,
+        -90.0
+      ]
+    },
+    {
+      "kind": "home",
+      "pose_override": [
+        180.0,
+        -60.0,
+        290.0,
+        -90.0,
+        0.0,
+        -90.0
+      ]
+    },
+    {
+      "kind": "move_named",
+      "name": "Right",
+      "pose_override": [
+        180.0,
+        -60.0,
+        290.0,
+        -90.0,
+        0.0,
+        -100.0
+      ]
+    },
+    {
+      "kind": "move_named",
+      "name": "Right",
+      "pose_override": [
+        180.0,
+        -60.0,
+        290.0,
+        -90.0,
+        0.0,
+        -105.0
+      ]
+    },
+    {
+      "kind": "move_named",
+      "name": "Right",
+      "pose_override": [
+        180.0,
+        -60.0,
+        290.0,
+        -90.0,
+        0.0,
+        -110.0
+      ]
+    },
+    {
+      "kind": "move_named",
+      "name": "Right",
+      "pose_override": [
+        180.0,
+        -60.0,
+        290.0,
+        -90.0,
+        0.0,
+        -115.0
+      ]
+    },
+    {
+      "kind": "move_named",
+      "name": "Right",
+      "pose_override": [
+        180.0,
+        -60.0,
+        290.0,
+        -90.0,
+        0.0,
+        -120.0
+      ]
+    },
+    {
+      "kind": "move_named",
+      "name": "Right",
+      "pose_override": [
+        180.0,
+        -60.0,
+        290.0,
+        -90.0,
+        0.0,
+        -125.0
+      ]
+    },
+    {
+      "kind": "move_named",
+      "name": "Right",
+      "pose_override": [
+        180.0,
+        -60.0,
+        290.0,
+        -90.0,
+        0.0,
+        -130.0
+      ]
+    },
+    {
+      "kind": "move_named",
+      "name": "Right",
+      "pose_override": [
+        180.0,
+        -60.0,
+        290.0,
+        -90.0,
+        0.0,
+        -135.0
+      ]
+    },
+    {
+      "kind": "home",
+      "pose_override": [
+        180.0,
+        -60.0,
+        290.0,
+        -90.0,
+        0.0,
+        -90.0
+      ]
+    },
+    {
+      "kind": "move_named",
+      "name": "UP",
+      "pose_override": [
+        180.0,
+        -60.0,
+        290.0,
+        -80.0,
+        0.0,
+        -90.0
+      ]
+    },
+    {
+      "kind": "move_named",
+      "name": "UP",
+      "pose_override": [
+        180.0,
+        -60.0,
+        290.0,
+        -75.0,
+        0.0,
+        -90.0
+      ]
+    },
+    {
+      "kind": "move_named",
+      "name": "UP",
+      "pose_override": [
+        180.0,
+        -60.0,
+        290.0,
+        -70.0,
+        0.0,
+        -90.0
+      ]
+    },
+    {
+      "kind": "move_named",
+      "name": "UP",
+      "pose_override": [
+        180.0,
+        -60.0,
+        290.0,
+        -65.0,
+        0.0,
+        -90.0
+      ]
+    },
+    {
+      "kind": "move_named",
+      "name": "UP",
+      "pose_override": [
+        180.0,
+        -60.0,
+        290.0,
+        -60.0,
+        0.0,
+        -90.0
+      ]
+    },
+    {
+      "kind": "move_named",
+      "name": "UP",
+      "pose_override": [
+        180.0,
+        -60.0,
+        290.0,
+        -55.0,
+        0.0,
+        -90.0
+      ]
+    },
+    {
+      "kind": "move_named",
+      "name": "UP",
+      "pose_override": [
+        180.0,
+        -60.0,
+        290.0,
+        -50.0,
+        0.0,
+        -90.0
+      ]
+    },
+    {
+      "kind": "move_named",
+      "name": "UP",
+      "pose_override": [
+        180.0,
+        -60.0,
+        290.0,
+        -45.0,
+        0.0,
+        -90.0
+      ]
+    },
+    {
+      "kind": "home",
+      "pose_override": [
+        180.0,
+        -60.0,
+        290.0,
+        -90.0,
+        0.0,
+        -90.0
+      ]
+    },
+    {
+      "kind": "move_named",
+      "name": "Pick_up"
+    },
+    {
+      "kind": "vacuum",
+      "enabled": false
+    }
+  ],
+  "defaults": {
+    "speed": "50",
+    "start_step": "5",
+    "end_step": "38",
+    "wait_ms": "500"
+  }
+}
