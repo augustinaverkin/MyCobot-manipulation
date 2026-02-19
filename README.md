@@ -1,18 +1,18 @@
-# MyCobot Control Toolkit
+# Quick Move GUI (MyCobot 280)
 
-Python tools for controlling a MyCobot 280 robot arm:
+This project provides a single desktop application for controlling a MyCobot 280:
 
-- `manipulation_degrees/quick_move_gui.py`: main GUI for quick jog/move, saved poses, sequence building, vacuum control, and CSV motion recording.
-- `motion_gui.py` + `record_motion.py`: older motion recording/playback utilities.
-- `Cube_detection_pickup/`: camera-based cube detection and pick/place scripts.
+- `quick_move_gui.py`
+
+The app includes manual jog control, target pose moves, saved named poses, sequence building, vacuum control, and CSV motion recording.
 
 ## Requirements
 
-- Python 3.10+ recommended
-- MyCobot 280 connected over USB serial
-- Linux users: `tkinter` package installed (`python3-tk`)
+- Python 3.10+
+- MyCobot 280 connected via USB serial
+- Linux: `python3-tk` installed
 
-Python packages are listed in `requirements.txt`:
+Python packages:
 
 - `pymycobot`
 - `numpy`
@@ -20,97 +20,81 @@ Python packages are listed in `requirements.txt`:
 
 ## Installation
 
-### 1. Clone repository
-
-```bash
-git clone <your-repo-url>.git
-cd MyCobot
-```
-
-### 2. (Recommended) create virtual environment
+### 1. Create and activate a virtual environment
 
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
 ```
 
-### 3. Install system packages (Ubuntu/Debian)
+### 2. Install system dependency (Ubuntu/Debian)
 
 ```bash
 sudo apt update
 sudo apt install -y python3-tk
 ```
 
-### 4. Install Python dependencies
+### 3. Install Python dependencies
 
 ```bash
 pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-## Quick Start (Main GUI)
+## Run
 
-Run:
+From this folder:
 
 ```bash
-python manipulation_degrees/quick_move_gui.py
+python quick_move_gui.py
 ```
 
-Default serial settings:
+Default serial connection:
 
 - Port: `/dev/ttyACM0`
 - Baudrate: `115200`
 
-You can also override defaults with environment variables:
+Optional environment overrides:
 
 ```bash
 export MYCOBOT_PORT=/dev/ttyACM0
 export MYCOBOT_BAUD=115200
 ```
 
-Settings are saved to:
+## Main Features
 
-- `manipulation_degrees/quick_move_settings.json`
-
-## Main Features (quick_move_gui)
-
-- Joint and Cartesian jog control (`+/-` and direct numeric input)
+- Joint and Cartesian quick move controls (`+/-` and direct numeric input)
 - Move to target pose (`x, y, z, rx, ry, rz`)
-- Named pose save/load/edit
-- Sequence builder:
-  - Move named pose
-  - Home
-  - Wait
-  - Vacuum ON/OFF
-  - Reorder, copy/paste, delete
+- Named position management
+- Sequence builder with:
+  - Move to named pose / home
+  - Wait step
+  - Vacuum ON/OFF step
+  - Reorder, delete, clear
+  - Copy/paste step
+- Per-step move pose editing in sequence
 - Sequence save/load (`.json`)
-- CSV recording while sequence runs (step-based snapshot mode)
-- Abort motion
-- Home/target closest-reachable fallback when exact target is not reachable
+- CSV recording by reached step
+- Abort motion button
+- Closest-reachable fallback for unreachable targets
 - Adjustable in-position tolerances in Settings
 
-## Other Scripts
+## Settings File
 
-### Legacy motion GUI
+The GUI stores settings in:
 
-```bash
-python motion_gui.py
-```
+- `quick_move_settings.json`
 
-### Camera preview / detection utilities
-
-```bash
-python Cube_detection_pickup/camera_preview.py
-python Cube_detection_pickup/main.py
-```
+This includes serial port/baudrate, home pose, tool length, and tolerance values.
 
 ## Notes
 
-- Robot control and camera control are hardware-dependent; always test with low speed first.
-- Verify vacuum wiring matches the configured digital pins in code.
-- If serial permissions fail on Linux, add your user to `dialout` and re-login:
+- Start with low speeds for first tests.
+- If serial access is denied on Linux:
 
 ```bash
 sudo usermod -aG dialout $USER
 ```
+
+Then log out and log back in.
 
